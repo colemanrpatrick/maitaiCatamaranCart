@@ -1,0 +1,444 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+*:not(.fa) {
+  font-family: 'Avenir', sans-serif;
+}
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+li {
+  list-style-type: none !important;
+}
+main {
+  width: 100%;
+  position: relative;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+main {
+  font-size: 35px;
+}
+@media(max-width:2280px) {
+  main {
+    font-size: 28px;
+  }
+}
+@media(max-width:2160px) {
+  main {
+    font-size: 26px;
+  }
+}
+@media(max-width:1800px) {
+  main {
+    font-size: 22px;
+  }
+}
+@media(max-width:1608px) {
+  main {
+    font-size: 20px;
+  }
+}
+@media(max-width:1440px) {
+  main {
+    font-size: 18px;
+  }
+}
+@media(max-width:1200px) {
+  main {
+    font-size: 16px;
+  }
+}
+@media(max-width:1085px) {
+  main {
+    font-size: 15px;
+  }
+}
+@media(max-width:950px) {
+  main {
+    font-size: 13px;
+  }
+}
+@media(max-width:600px) {
+  main {
+    font-size: 12px;
+  }
+}
+@media(max-width:450px) {
+  main {
+    font-size: 10px;
+  }
+}
+.wrapper {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  width: 100%;
+  position: relative;
+}
+.wrapper::before {
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background-image: url("images/blueBackground.png");
+  background-size: cover;
+  background-position: center;
+}
+.masthead {
+  width: 100%;
+  font-size: 1em;
+  text-align: center;
+  position: relative;
+  background: #09cdf4;
+  background: -moz-linear-gradient(top, #09cdf4 0%, #07a4e8 100%);
+  background: -webkit-linear-gradient(top, #09cdf4 0%, #07a4e8 100%);
+  background: linear-gradient(to bottom, #09cdf4 0%, #07a4e8 100%);
+  padding-bottom: 0.5em;
+}
+#logo {
+  font-size: 1.5em;
+  padding-top: 0.5em;
+}
+#logo img {
+  height: 3em;
+  display: inline-block;
+  vertical-align: middle;
+}
+#logo h1 {
+  font-size: 2em;
+  color: white;
+  font-family: "Alata", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0.8em;
+}
+#logo h1 span {
+  display: block;
+  font-size: 0.6em;
+}
+.masthead h2 {
+  text-transform: capitalize;
+  font-size: 1em;
+  color: white;
+  font-family: "Chelsea Market";
+}
+#main-nav {
+  position: absolute;
+  top: 10.8em;
+  z-index: 5;
+  width: 100%;
+  background-color: #3bd7e7;
+  border-top: 0.15em solid white;
+  border-bottom: 0.15em solid white;
+  box-shadow: 0em 0.5em 0.75em -0.35em #0000005c;
+}
+#main-nav section {
+  position: relative;
+  width: 100%;
+}
+#main-nav section ul {
+  display: table;
+  width: 100%;
+}
+#main-nav section ul li {
+  display: table-cell;
+  vertical-align: top;
+  text-align: center;
+  padding: 0.75em;
+}
+#main-nav section ul li a {
+  color: white;
+  text-transform: capitalize;
+  display: block;
+}
+#main-nav section ul li:hover {
+  background-color: gold
+}
+#main-nav section ul li:hover a {
+  color: teal;
+}
+.parentAnchor {
+  font-family: "Chelsea Market";
+}
+.phone {
+  width: 100%;
+  text-align: center;
+  background-color: #00008075;
+  font-size: 1.25em;
+}
+.phone ul li a {
+  color: white;
+  font-size: 1.25em;
+}
+.phone ul {
+  width: 30em;
+  display: table;
+  margin: 0 auto;
+}
+.phone ul li {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  padding: 0.5em;
+  text-align: center;
+}
+.phone span {
+  color: white;
+}
+.phone ul li a {
+  color: white;
+}
+.menu-btn {
+  display: none;
+  position: absolute;
+  left: 1em;
+  width: 2.5em;
+  height: 2em;
+  transition: 0.3s;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  z-index: 999;
+  top: 4.25em;
+  font-size: 1em;
+}
+.menu-btn:hover {
+  transform: scale(1.2);
+}
+.menu-btn hr {
+  display: block;
+  width: 100%;
+  height: 0.35em;
+  background-color: white;
+  border: 0;
+  transition: 0.3s;
+  position: absolute;
+}
+.menu-btn-hr-1 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  -moz-transform: translateX(-50%) rotate(0deg);
+  -ms-transform: translateX(-50%) rotate(0deg);
+  -o-transform: translateX(-50%) rotate(0deg);
+  -webkit-transform: translateX(-50%) rotate(0deg);
+}
+.menu-btn-hr-2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.menu-btn-hr-3 {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  -moz-transform: translateX(-50%) rotate(0deg);
+  -ms-transform: translateX(-50%) rotate(0deg);
+  -o-transform: translateX(-50%) rotate(0deg);
+  -webkit-transform: translateX(-50%) rotate(0deg);
+}
+.menu-btn.active .menu-btn-hr-1 {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  -o-transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+}
+.menu-btn.active .menu-btn-hr-2 {
+  opacity: 0;
+}
+.menu-btn.active .menu-btn-hr-3 {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  -moz-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  -o-transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+}
+#cart-btn {
+  position: absolute;
+  right: 1em;
+  top: 4em;
+  line-height: 0;
+  background: none;
+  border: none;
+  font-size: 1em;
+  display: none;
+}
+#cart-btn .material-icons {
+  font-size: 3em !important;
+  color: white;
+}
+@media(max-width:800px) {
+  .menu-btn {
+    display: block;
+  }
+  #cart-btn {
+    display: block;
+  }
+  #main-nav {
+    width: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    overflow: hidden;
+    transition: 0.3s;
+    top: 0;
+    margin-right: -4px;
+  }
+  #main-nav.active {
+    width: 20em;
+  }
+  #main-nav section ul li, #main-nav section ul li a {
+    display: block;
+  }
+}
+@media(max-width:500px){
+	.phone ul{
+		width: 100%;
+	}
+	.phone span {
+	display: block;
+	}
+	#cart-btn {
+	top: 7em;
+	}
+	.menu-btn {
+	top: 7.25em;
+	}
+	#main-nav section ul li, #main-nav section ul li a {
+	font-size: 1.25em;
+	}
+}
+/*================*/
+/*===========*/
+.footer {
+  width: 100%;
+  padding: 1em;
+  font-size: 1em;
+  background-color: #0e9894cf;
+}
+.footer header {
+  width: 100%;
+  text-align: center;
+}
+#logo-footer {
+  font-size: 1.5em;
+  padding-top: 0.5em;
+}
+#logo-footer img {
+  height: 3em;
+  display: inline-block;
+  vertical-align: middle;
+}
+#logo-footer h2 {
+  font-size: 2em;
+  color: white;
+  font-family: "Alata", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0.8em;
+}
+#logo-footer h2 span {
+  display: block;
+  font-size: 0.6em;
+}
+.social {
+  width: 100%;
+  text-align: center
+}
+.social p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  text-transform: capitalize;
+  color: white;
+  padding: 0.5em;
+}
+.social a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2em;
+  margin: 0.5em;
+  transition: 0.3s;
+  height: 2em;
+  background-size: cover;
+  background-image: url('images/facebook_twitter_pinterest_youtube.png')
+}
+.social a:hover {
+  transform: scale(1.1);
+}
+.facebook-social {
+  background-position: 0 0;
+}
+.twitter-social {
+  background-position: 32% 0;
+}
+.youtube-social {
+  background-position: 66% 0;
+}
+.pinterest-social {
+  background-position: 100% 0;
+}
+.footer-section {
+  width: 100%;
+  padding: 1em;
+}
+.footer section ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin-left: -5px;
+  text-align: center;
+}
+.footer section ul li {
+  width: 100%;
+}
+.footer section ul li b {
+  font-size: 1.3em;
+  color: white;
+  text-transform: capitalize;
+}
+.footer section ul li a {
+  display: inline-block;
+  color: white !important;
+  padding: 0.25em;
+  text-transform: capitalize;
+}
+@media(max-width:700px) {
+  .social a {
+    width: 3em;
+    height: 3em;
+  }
+  .footer section ul {
+    padding: 2em;
+  }
+  .footer section ul li a {
+    font-size: 1.2em;
+  }
+}
