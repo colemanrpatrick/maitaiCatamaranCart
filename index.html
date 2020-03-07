@@ -212,16 +212,12 @@
                     </ul>
                   </div>
                 </div>
-
-
                     <div class="form-group cart-form-group">
                       <div class="cart-form-content">
                         <input type="text" name="dateInput" id="dateInput" value="">
                         <div id="datepicker">
 
                         <script type="text/javascript">
-                        // $("#dateInput").attr('value',$(this).val());
-
                         $("#datepicker").datepicker();
 
                         $("#dateInput").change(function(){
@@ -231,20 +227,8 @@
                           $("#dateInput").attr('value',$(this).val());
                         });
                         </script>
-                        <!-- <label class="control-label col-md-2" for="Activity_Date">Activity Date</label>
-                        <div>
-                          <input class="datepicker" name="ActivityDate_280" type="text" value="">
-                          <script>
-                          var vActivityDate_280 = ["01/14/2020","01/15/2020","01/10/2020","01/11/2020"]; $(function (){$("[name='ActivityDate_280']").datepicker({beforeShowDay: function(date){        var string = jQuery.datepicker.formatDate('mm/dd/yy', date);        return [ vActivityDate_280.indexOf(string) == -1 ]    }})})
-                          </script><br>
-                        </div> -->
                       </div>
-
                     </div>
-
-
-
-
                     <div class="form-group cart-form-group">
                       <div id="par-group">
                         <label class="control-label col-md-2" for="Participant_Names_and_Ages">Participant Names and Ages</label>
@@ -255,8 +239,6 @@
                         </div>
                       </div>
                     </div>
-
-
                     <div class="form-group cart-form-group">
                       <label class="control-label col-md-2" for="Select_Your_Oahu_Hotel">Select Your Oahu Hotel</label> <select name="SelectYourOahuHotel_280">
                           <option>
@@ -642,9 +624,7 @@
                           </option>
                         </select>
                     </div>
-
-
-                  <div class="form-group cart-form-group" >
+                  <div class="form-group cart-form-group">
                     <div id="review">
                       <label class="control-label col-md-2" for="Cancellation_-_20__guests_2_weeks">Cancellation - 20+ guests 2 weeks</label>
                         <div>
@@ -660,11 +640,9 @@
                           Your OrderTotal is: <span>$0.00<br></span>
                         </p><input class="addToCart" onclick="storeParticipants()" type="submit" value="Add to Cart">
                     </div>
-
-                    </div>
+                  </div>
                 </div>
               </div>
-<!-- ============= -->
             </form>
             <div class="cart-footer">
               <div>
@@ -679,8 +657,6 @@
             </div>
         </div>
       </div>
-        <!-- <div class="gallery">
-        </div> -->
         <div class="article-section">
           <article>
             <h3>
@@ -772,25 +748,19 @@
     <script src="participantHandler.js"></script>
     <!-- ============================================================  -->
     <script>
-
     /*radio buttons*/
-
     var $radioBtn = document.getElementsByName("updateProductOrder");
     var $parent;
     var $label;
-
     (function () {
     for (var i = 0; i < $radioBtn.length; i++) {
         $parent = document.getElementById("update-cart");
-
         $div = document.createElement("div");
         $div.setAttribute("class", "update-option");
         $parent = $radioBtn[i].parentElement;
         $parent.insertBefore($div, $radioBtn[i]);
         $div.appendChild($radioBtn[i]);
-
         $parent = $radioBtn[i].parentElement;
-
         $label = document.createElement("label");
         $label.setAttribute('class', 'update-label');
         $parent.insertBefore($label, $radioBtn[i]);
@@ -799,7 +769,6 @@
     };
     }())
     function checkBoxChecked() {
-
     for (var i = 0; i < $radioBtn.length; i++) {
         console.log("checked", this);
         $radioBtn[i].previousElementSibling.className = "update-label";
@@ -808,7 +777,6 @@
         }
     };
     };
-
     for (var i = 0; i < $radioBtn.length; i++) {
     if ($radioBtn[i].checked === true) {
         $radioBtn[i].previousElementSibling.className = "update-label-active";
@@ -818,11 +786,9 @@
 
     $radioBtn[i].addEventListener("change", checkBoxChecked);
     };
-
     /*============*/
     $('.numberSpinner').spinner();
 
-    // number spinner //numberSpinner
     var numberSpinner = document.getElementsByClassName('numberSpinner');
 
     var indexNumber = 0;
@@ -846,17 +812,11 @@
     numberSpinner[i].parentElement.parentElement.insertBefore(minusButton, numberSpinner[i].parentElement);
     numberSpinner[i].parentElement.parentElement.insertBefore(plusButton, numberSpinner[i].parentElement.nextElementSibling);
 
-
     console.log(numberSpinner[i].parentElement);
     }
-
-
-
     'use strict';
     function numIncrement(inputObj, increase) {
-
     var myInputObject = inputObj;
-
     if (increase) {
         myInputObject.value++;
     } else {
@@ -869,9 +829,7 @@
         myInputObject.value = 0;
     }
     }
-
     function buttonEvents() {
-
     var numPlus = document.getElementsByClassName("numberPlus");
     var numMinus = document.getElementsByClassName("numberMinus");
 
@@ -884,7 +842,6 @@
             recalcTotal();
         })
     }
-
     for (var i = 0; i < numMinus.length; i++) {
         numMinus[i].onclick = (function () {
             var buttonAssociation = this.nextElementSibling.children[0];
@@ -894,11 +851,7 @@
         })
     }
     }
-
     buttonEvents();
-
-
-
     //===================================================================//
     //===================================================================//
     //===================================================================//
@@ -907,7 +860,6 @@
     //===================================================================//
     //===================================================================//
     (function () {
-
         var objs = document.getElementsByClassName("p-desc");
         for (var i = 0; i < objs.length; i++) {
             var strings = objs[i].innerHTML;
@@ -919,7 +871,6 @@
                 break;
             }
         }
-
     }());
     </script>
     <script type="text/javascript">
@@ -940,7 +891,6 @@
         menuBtn.className = "menu-btn";
       }
     })
-
     function visible(elem){
       return elem && (elem.offsetWidth === 0) ;
     }
